@@ -4,7 +4,7 @@ $font-secondary: 'Satisfy', cursive;;
 
 
 // Overrides
-$grid-gutter-width: 40px !default; 
+$grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
@@ -56,16 +56,16 @@ $form-group-margin-bottom:       30px !default;
           border-radius: $radius;
 }
 @mixin flex() {
-	display: -webkit-box;      
-  	display: -moz-box;         
-  	display: -ms-flexbox;      
-  	display: -webkit-flex;     
-  	display: flex;             
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
 }
 @mixin flexwrap() {
 	flex-wrap: wrap;
-	-webkit-flex-wrap: wrap; 
-	-moz-flex-wrap: wrap; 
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
 }
 
 @font-face {
@@ -80,7 +80,7 @@ $form-group-margin-bottom:       30px !default;
 }
 
 @mixin icomoon() {
-	
+
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -92,10 +92,10 @@ $form-group-margin-bottom:       30px !default;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	
+
 }
 
-// Import 
+// Import
 @import 'bootstrap/mixins';
 @import 'bootstrap/variables';
 
@@ -104,7 +104,7 @@ $form-group-margin-bottom:       30px !default;
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
 
@@ -113,9 +113,9 @@ body {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 1.7;
-	color: rgba(255, 255, 255, .3);
+	color: white;
 	background: #000 url(../images/broken_noise.png) repeat;
-	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {  
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
      background: #000 url(../images/broken_noise.png) repeat;
 	}
 
@@ -127,9 +127,9 @@ body {
 	height: 100%;
 	@include transition(.5s);
 	.offcanvas & {
-		overflow: hidden;	
+		overflow: hidden;
 		position: absolute;
-		
+
 		&:after {
 			@include transition(2s);
 			position: absolute;
@@ -189,11 +189,11 @@ h1, h2, h3, h4, h5, h6, figure {
 
 	@include transition(.3s);
 	@media screen and (max-width: $screen-xs) {
-		position: absolute;	
+		position: absolute;
 	}
 	&.scrolled {
 		background: #000 url(../images/broken_noise.png) repeat;
-		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {  
+		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 	     background: #000 url(../images/broken_noise.png) repeat;
 		}
 		top: -82px;
@@ -201,7 +201,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			background: transparent;
 		}
 	}
-	
+
 
 	#fh5co-logo {
 		font-size: 32px;
@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6, figure {
 				font-size: 14px;
 			}
 			a {
-				
+
 				padding: 30px 15px;
 				color: rgba(255,255,255,.7);
 				@include transition(.5s);
@@ -289,7 +289,7 @@ h1, h2, h3, h4, h5, h6, figure {
 						border-width: 8px;
 						margin-left: -8px;
 					}
-					
+
 					li {
 						display: block;
 						margin-bottom: 7px;
@@ -323,7 +323,7 @@ h1, h2, h3, h4, h5, h6, figure {
 					}
 				}
 			}
-			
+
 			&.active {
 				> a {
 					color: $brand-white;
@@ -513,7 +513,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			margin-bottom: 30px;
 			@media screen and (max-width: $screen-md ) {
 				max-width: 100%;
-			} 
+			}
 		}
 	}
 }
@@ -543,7 +543,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		width: 100%;
 		backround: $brand-white;
 		&.margin_top {
-			margin-top: 150px; 
+			margin-top: 150px;
 			@media screen and (max-width: $screen-xs) {
 				margin-top: 0;
 			}
@@ -589,7 +589,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #form-wrap {
 	border: 4px solid rgba(255,255,255,.04);
-	padding: 30px;
+	padding: 167px;
 	.form-group {
 		&:last-child {
 			margin-bottom: 0!important;
@@ -808,7 +808,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		right: 0;
 		background: rgba(0, 0, 0, .7);
 	}
-	
+
 	.fh5co-heading {
 		margin-bottom: 0;
 		h2 {
@@ -905,7 +905,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		margin-bottom: 20px;
 		position: relative;
 		@media screen and (max-width: $screen-sm) {
-			margin-bottom: 4em;	
+			margin-bottom: 4em;
 		}
 		&:before, &:after{
 			content: " ";
@@ -1245,7 +1245,7 @@ box-shadow: 0px 8px 16px -4px rgba(0,0,0,0.13);
 			margin-bottom: 30px;
 		}
 	}
-	> div, 
+	> div,
 	blockquote{
 		border: none;
 		padding: 0;
@@ -1257,7 +1257,7 @@ box-shadow: 0px 8px 16px -4px rgba(0,0,0,0.13);
 		}
 
 	}
-	
+
 	span{
 		color: lighten($brand-black, 70%);
 	}
@@ -1330,7 +1330,7 @@ box-shadow: 0px 8px 16px -4px rgba(0,0,0,0.13);
 		a{
 			color: $brand-white;
 		}
-		
+
 	}
 }
 
@@ -1344,7 +1344,7 @@ box-shadow: 0px 8px 16px -4px rgba(0,0,0,0.13);
 	width: 270px;
 	// background: lighten($brand-black, 0%);
 	background: #000 url(../images/broken_noise.png) repeat;
-	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {  
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
      background: #000 url(../images/broken_noise.png) repeat;
 	}
 	top: 0;
@@ -1446,7 +1446,7 @@ box-shadow: 0px 8px 16px -4px rgba(0,0,0,0.13);
 			text-decoration: none;
 			outline: none;
 		}
-	}	
+	}
 }
 
 
