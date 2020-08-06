@@ -538,7 +538,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #form-wrap {
   border: 4px solid rgba(255, 255, 255, 0.04);
-  padding: 167px;
+  padding: 30px;
 }
 #form-wrap .form-group:last-child {
   margin-bottom: 0 !important;
