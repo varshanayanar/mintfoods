@@ -537,7 +537,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #form-wrap {
-  border: 4px solid rgba(255, 255, 255, 0.04);
+  border: 4px solid green;
   padding: 30px;
 }
 #form-wrap .form-group:last-child {
@@ -1554,7 +1554,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-right: 4px;
   margin-bottom: 4px;
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 16px;
+  font-size: 50px;
   font-weight: 400;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -1837,4 +1837,31 @@ textarea {
 	font-weight: 800;
 	color: green;
 	margin-top: -36px;
+}
+.quote-heading{
+  color: white;
+font-family: "Satisfy", cursive;
+
+padding-top: 80px;
+
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 50%;
 }
